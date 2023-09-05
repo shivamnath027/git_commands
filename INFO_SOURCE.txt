@@ -1,0 +1,51 @@
+git config --global user.email "you@example.com" // Configure globarl user email ID
+git config --global user.name "Your Name" // Configure globarl user name
+
+
+git init // Initialize empty Local Git Repository
+git clone "Repo Address" //Clone a repository
+git status // Check if there are any changes to be addressed
+git diff "filename" // Check the exact changes in the Repository
+
+
+git branch // Check current branch name
+git checkout -b "branch name" // Create a new branch
+git checkout "branch name" // Switch to a branch
+git branch -d "branch name" // Delete a branch // Before deleting, you must switch to another branch
+git merge "branch name" // Merge branch with Master // Before merging, go to master branch
+
+
+git log // Check commits
+git add "filename" // Stage the change for commit
+git commit -m "Commit Message" // Commit the changes to the Repository
+git reset --hard HEAD^ // Delete the last commit
+git reset --soft "Commit ID" // Delete the last commit but keep the changes staged
+git restore --staged "filename" // Remove current staged item from the staging area
+git restore "filename" // Completely remove the changes in the file (File removed from staging area)
+
+
+-------------------------------create a new repository on the command line
+echo "# repoName" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/userName/repoName.git
+git push -u origin main
+
+-------------------------------push an existing repository from the command line
+git remote add origin https://github.com/userName/repoName.git
+git branch -M main
+git push -u origin main
+git remote -v // checks existing remotes
+
+
+--------------------What i follow------------------------
+
+-> create a folder in Windows
+-> Traverse to that folder via CMD
+-> git init // To turn that folder into a repository
+-> gh repo create // To push local repo to GitHub
+-> git add . // To add all the new files to the staging area
+-> git commit -m "first commit"
+-> git push -u origin master // To push the repo from branch master(local) to origin
