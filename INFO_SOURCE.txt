@@ -52,3 +52,9 @@ git remote -v // checks existing remotes
 
 ------------------Setting up a new device config---------------
 ssh-keygen -t ed25519 -C "your_email@example.com"
+ Add the SSH key to your GitHub account
+Log in to your GitHub account and go to your profile picture in the top right corner, then click on Settings.
+Click on SSH and GPG keys in the left-hand menu.
+Click on New SSH key.
+Give the key a label (e.g., "New Device") and paste the contents of the ~/.ssh/id_ed25519.pub file into the Key field.
+Click Add SSH key.
