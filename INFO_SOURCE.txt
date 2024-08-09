@@ -49,3 +49,6 @@ git remote -v // checks existing remotes
 -> git add . // To add all the new files to the staging area
 -> git commit -m "first commit"
 -> git push -u origin master // To push the repo from branch master(local) to origin
+
+------------------Setting up a new device config---------------
+ssh-keygen -t ed25519 -C "your_email@example.com"
